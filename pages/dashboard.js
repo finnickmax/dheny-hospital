@@ -11,7 +11,9 @@ export default function Dashboard() {
         <li><Link href="/rawatjalan">Modul Rawat Jalan</Link></li>
         <li><Link href="/rawat-inap">Modul Rawat Inap</Link></li>
         <li><Link href="/integrasi">Integrasi BPJS & SATUSEHAT</Link></li>
+        <li><Link href="/integrasi/sep">➤ Modul SEP (BPJS VClaim)</Link></li>
       </ul>
     </Layout>
   );
 }
+
