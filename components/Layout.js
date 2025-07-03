@@ -15,37 +15,6 @@ export default function Layout({ children }) {
   );
 }
 
-// File: pages/index.js
-import Layout from '../components/Layout';
-
-export default function Home() {
-  return (
-    <Layout>
-      <h2>Welcome to Dheny Hospital SIMRS Demo</h2>
-      <p>This is a landing page showcasing SIMRS features including BPJS and SatuSehat integration.</p>
-      <a href="/login">Try Demo Login</a>
-    </Layout>
-  );
-}
-
-// File: pages/login.js
-import Layout from '../components/Layout';
-
-export default function Login() {
-  return (
-    <Layout>
-      <h2>Login Demo</h2>
-      <p>Username: <strong>demo</strong></p>
-      <p>Password: <strong>demo123</strong></p>
-      <form onSubmit={(e) => { e.preventDefault(); window.location.href = '/dashboard'; }}>
-        <input type="text" placeholder="Username" required /> <br /><br />
-        <input type="password" placeholder="Password" required /> <br /><br />
-        <button type="submit">Login</button>
-      </form>
-      <p><em>Login form hanya simulasi. Tidak ada proses autentikasi sungguhan.</em></p>
-    </Layout>
-  );
-}
 
 // File: pages/dashboard.js
 import Layout from '../components/Layout';
