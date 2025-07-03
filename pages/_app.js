@@ -1,3 +1,4 @@
+// pages/_app.js
 import { PatientProvider } from '@/context/PatientContext';
 import { InpatientProvider } from '@/context/InpatientContext';
 import '@/styles/globals.css';
