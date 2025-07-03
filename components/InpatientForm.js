@@ -1,10 +1,9 @@
-// components/InpatientForm.js
-
 import { useState, useContext } from 'react';
-import { PatientContext } from '@/context/PatientContext';
+import { InpatientContext } from '@/context/InpatientContext';
 
 export default function InpatientForm() {
-  const { patients, addInpatient } = useContext(PatientContext);
+  const { patients, addInpatient } = useContext(InpatientContext);
+
   const [form, setForm] = useState({
     patientId: '',
     room: '',
@@ -28,7 +27,7 @@ export default function InpatientForm() {
       <h2 className="text-xl font-semibold">Form Rawat Inap</h2>
       <select name="patientId" value={form.patientId} onChange={handleChange} className="w-full border p-2 rounded">
         <option value="">Pilih Pasien</option>
-        {patients.map((p) => (
+        {patients?.map((p) => (
           <option key={p.id} value={p.id}>{p.name}</option>
         ))}
       </select>
@@ -40,3 +39,4 @@ export default function InpatientForm() {
     </form>
   );
 }
+
