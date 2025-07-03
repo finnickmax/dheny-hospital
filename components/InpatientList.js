@@ -1,10 +1,10 @@
 // components/InpatientList.js
 
 import { useContext } from 'react';
-import { PatientContext } from '@/context/PatientContext';
+import { InpatientContext } from '@/context/InpatientContext';
 
 export default function InpatientList() {
-  const { inpatients, patients } = useContext(PatientContext);
+  const { inpatients, patients } = useContext(InpatientContext);
 
   const getPatientName = (id) => {
     const patient = patients.find((p) => p.id == id);
