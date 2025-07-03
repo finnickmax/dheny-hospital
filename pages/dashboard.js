@@ -8,6 +8,7 @@ export default function Dashboard() {
       <ul>
         <li><a href="/pendaftaran">Modul Pendaftaran</a></li>
         <li><a href="/rawatjalan">Modul Rawat Jalan</a></li>
+        <li><a href="/rawat-inap">Modul Rawat Inap</a></li> {/* ← Tambahkan baris ini */}
         <li><a href="/integrasi">Integrasi BPJS & SATUSEHAT</a></li>
       </ul>
     </Layout>
