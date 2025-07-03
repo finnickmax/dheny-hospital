@@ -1,14 +1,15 @@
-// pages/_app.js
-import { PatientProvider } from '@/context/PatientContext';
-import { InpatientProvider } from '@/context/InpatientContext';
-import '@/styles/globals.css';
+import { createContext, useContext, useState } from 'react';
 
-export default function App({ Component, pageProps }) {
+const PatientContext = createContext();
+
+export const PatientProvider = ({ children }) => {
+  const [patients, setPatients] = useState([]);
+
   return (
-    <PatientProvider>
-      <InpatientProvider>
-        <Component {...pageProps} />
-      </InpatientProvider>
-    </PatientProvider>
+    <PatientContext.Provider value={{ patients, setPatients }}>
+      {children}
+    </PatientContext.Provider>
   );
-}
+};
+
+export const usePatient = () => useContext(PatientContext);
