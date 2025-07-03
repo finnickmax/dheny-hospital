@@ -1,4 +1,4 @@
-// File: components/Layout.js
+// components/Layout.js
 export default function Layout({ children }) {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif' }}>
@@ -15,56 +15,3 @@ export default function Layout({ children }) {
   );
 }
 
-
-// File: pages/dashboard.js
-import Layout from '../components/Layout';
-
-export default function Dashboard() {
-  return (
-    <Layout>
-      <h2>Dashboard Utama - Dheny Hospital SIMRS</h2>
-      <p>Selamat datang di halaman dashboard. Pilih modul di bawah:</p>
-      <ul>
-        <li><a href="/pendaftaran">Modul Pendaftaran</a></li>
-        <li><a href="/rawatjalan">Modul Rawat Jalan</a></li>
-        <li><a href="/integrasi">Integrasi BPJS & SATUSEHAT</a></li>
-      </ul>
-    </Layout>
-  );
-}
-
-// File: pages/pendaftaran.js
-import Layout from '../components/Layout';
-
-export default function Pendaftaran() {
-  return (
-    <Layout>
-      <h2>Modul Pendaftaran</h2>
-      <p>Halaman ini merupakan simulasi tampilan pendaftaran pasien baru.</p>
-    </Layout>
-  );
-}
-
-// File: pages/rawatjalan.js
-import Layout from '../components/Layout';
-
-export default function RawatJalan() {
-  return (
-    <Layout>
-      <h2>Modul Rawat Jalan</h2>
-      <p>Halaman ini menunjukkan daftar pasien rawat jalan.</p>
-    </Layout>
-  );
-}
-
-// File: pages/integrasi.js
-import Layout from '../components/Layout';
-
-export default function Integrasi() {
-  return (
-    <Layout>
-      <h2>Integrasi BPJS dan SATUSEHAT</h2>
-      <p>Halaman ini menjelaskan simulasi integrasi data dengan sistem BPJS dan SATUSEHAT.</p>
-    </Layout>
-  );
-}
