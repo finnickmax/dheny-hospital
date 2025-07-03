@@ -1,6 +1,5 @@
-/* styles/globals.css */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+mkdir styles
+echo "body { margin:0; padding:0; }" > styles/globals.css
+git add styles/globals.css
+git commit -m "fix: add missing globals.css"
+git push origin main
