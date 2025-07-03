@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import Link from 'next/link';
 
 export default function Dashboard() {
   return (
@@ -6,10 +7,10 @@ export default function Dashboard() {
       <h1>Dashboard Utama - Dheny Hospital SIMRS</h1>
       <p>Selamat datang di halaman dashboard. Pilih modul di bawah:</p>
       <ul>
-        <li><a href="/pendaftaran">Modul Pendaftaran</a></li>
-        <li><a href="/rawatjalan">Modul Rawat Jalan</a></li>
-        <li><a href="/rawat-inap">Modul Rawat Inap</a></li> {/* ← Tambahkan baris ini */}
-        <li><a href="/integrasi">Integrasi BPJS & SATUSEHAT</a></li>
+        <li><Link href="/pendaftaran">Modul Pendaftaran</Link></li>
+        <li><Link href="/rawatjalan">Modul Rawat Jalan</Link></li>
+        <li><Link href="/rawat-inap">Modul Rawat Inap</Link></li>
+        <li><Link href="/integrasi">Integrasi BPJS & SATUSEHAT</Link></li>
       </ul>
     </Layout>
   );
